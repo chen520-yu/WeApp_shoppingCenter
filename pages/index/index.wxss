@@ -1,0 +1,122 @@
+.swiper-container {
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 244, 244);
+}
+
+.swiper-container swiper-item {
+    width: 750rpx;
+    height: 100%;
+    border-top-left-radius: cover;
+    
+}
+    
+.swiper-container swiper-item image {
+    width: 95%;
+    height: 95%;
+    border-radius: 10%;
+    box-shadow: 5rpx 5rpx 10rpx rgb(165, 165, 165)  ;
+}
+
+.theme {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 20rpx 0;
+    background-color: white;
+}
+
+.theme-item {
+    height: 160rpx;
+    width: 20%;
+    margin: 20rpx 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.theme image {
+    height: 100%;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.theme text {
+    font-size: 30rpx;
+    margin-top: 15rpx;
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-top {
+    border-left: 10rpx solid rgb(9, 255, 0);
+    height: 6%;
+    padding: 0 40rpx;
+    padding-top: 30rpx;
+    background-color: white;
+
+}
+
+.menu-top text {
+    font-size: 37rpx;
+}
+
+.product {
+    margin: 5rpx 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.product-left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.product-left image {
+    width: 125rpx;
+    height: 125rpx;
+    color: #f7662d;
+    margin: 20rpx 20rpx;
+    border-radius: 20rpx;
+}
+
+.product-left-text {
+    margin-left: 20rpx;
+}
+
+.product-left-text1 {
+    font-size: 32rpx;
+    margin-top: 5rpx;
+}
+
+.product-left-text2 {
+    font-size: 24rpx;
+    margin-top: 20rpx;
+    color: rgb(165, 165, 165);
+
+}
+
+.product-left-text3 {
+    font-size: 27rpx;
+    margin-top: 10rpx;
+}
+
+.product-right button {
+    margin-right: 35rpx;
+    margin-top: 70rpx;
+    border-radius: 30rpx;
+}

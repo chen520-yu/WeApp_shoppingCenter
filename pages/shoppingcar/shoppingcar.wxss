@@ -1,0 +1,29 @@
+.information image {
+    height: 130rpx;
+    width: 130rpx;
+    border-radius: 50rpx;
+    margin-left: 20rpx;
+}
+
+.information {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    height: 150rpx;
+}
+
+.pro_text{
+    height: 150rpx;
+    margin-left: 30rpx;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product{
+    margin-top: 18rpx;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.checkbox{
+    margin-left: 20rpx !important;
+}
+

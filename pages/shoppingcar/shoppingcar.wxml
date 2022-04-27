@@ -1,0 +1,23 @@
+<van-checkbox-group value="{{ result }}" bind:change="onChange">
+    <block wx:for="{{product}}" wx:key="item">
+        <view class="display_row_spa product" data-index="{{index}}" bindlongpress="deletePro">
+            <van-checkbox name="{{index}}" custom-class="checkbox"></van-checkbox>
+            <view class="display_row_bet information">
+                <view class="display_row_spa">
+                    <image src="{{item.image}}"> </image>
+                    <view class="display_col_str pro_text">
+                        <text style="font-size: 36rpx;">{{item.name}}</text>
+                        <text style="color: red;font-size: 33rpx; margin-top: 15rpx;">￥{{item.price}}</text>
+                    </view>
+                </view>
+                <van-stepper   disable-input="true" value="{{ item.num }}" data-index="{{index}}" bind:change="addNum" />
+            </view>
+        </view>
+    </block>
+</van-checkbox-group>
+
+<van-submit-bar price="{{ price }}" button-text="提交订单" bind:submit="onClickButton" tip="{{ true }}">
+    <view style="margin-top:8rpx;font-size: 32rpx;">
+        <van-checkbox value="{{ checked }}" bind:change="Change">全选</van-checkbox>
+    </view>
+</van-submit-bar>

@@ -1,0 +1,19 @@
+<view class="container">
+    <scroll-view class="left-container">
+        <block wx:for="{{list}}" wx:key="item">
+            <view class="left-item {{index+1==select?'active':''}}" data-index="{{index+1}}" bindtap="slectType">{{item}}</view>
+        </block>
+    </scroll-view>
+
+    <scroll-view class="right-container">
+        <view class="right-container-top">
+            <image mode="aspectFill" src="{{top}}"></image>
+        </view>
+        <view class="right-container-body">
+            <view wx:for="{{products}}" wx:key="item" class="right-container-item">
+                <image mode="aspectFill" src="{{item.image}}"></image>
+                <view class="right-container-text">{{item.name}}</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

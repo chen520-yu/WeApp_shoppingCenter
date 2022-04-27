@@ -1,0 +1,70 @@
+.top {
+    width: 100%;
+    height: 300rpx;
+    background-color: #FF6666;
+}
+
+.userIcon {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+
+.top_information {
+    
+}
+
+
+.top_information text {
+    margin-top: 25rpx;
+    font-size: 35rpx;
+    color: rgb(255, 255, 255);
+}
+
+.myOrder {
+    border-radius: 20rpx 20rpx 0 0;
+    width: 94%;
+    height: 75rpx;
+    margin: 0 3%;
+    margin-top: 30rpx;
+    background-color: rgb(255, 255, 255);
+}
+
+.body {
+    border-radius: 0 0 20rpx 20rpx;
+    width: 94%;
+    height: 120rpx;
+    margin: 0 3%;
+    margin-top: 8rpx;
+    background-color: white;
+}
+
+.bottom{
+    border-radius:20rpx;
+    width: 94%;
+    height: 500rpx;
+    background-color: rgb(255, 255, 255);
+    margin: 0 3%;
+    margin-top: 30rpx;
+}
+
+.body-item{
+    margin: 0 15rpx;
+    font-size: 24rpx;
+}
+.body-item image{
+    height: 55rpx;
+    width: 55rpx;
+}
+
+page{
+    background-color: rgb(243, 243, 243);
+}
+
+.order{
+    height: 100%;
+
+    
+}
+
+

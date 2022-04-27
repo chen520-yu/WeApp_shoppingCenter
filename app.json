@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/sort/sort",
+        "pages/shoppingcar/shoppingcar",
+        "pages/mine/mine",
+        "pages/detail/detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FF6666",
+        "navigationBarTitleText": "商城",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/icon/home.png",
+                "selectedIconPath": "/icon/home-fill.png"
+            },
+            {
+                "pagePath": "pages/sort/sort",
+                "text": "分类",
+                "iconPath": "/icon/all.png",
+                "selectedIconPath": "/icon/all-fill.png"
+            },
+            {
+                "pagePath": "pages/shoppingcar/shoppingcar",
+                "text": "购物车",
+                "iconPath": "/icon/cart- full.png",
+                "selectedIconPath": "/icon/cart- full-fill.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的中心",
+                "iconPath": "/icon/office-supplies.png",
+                "selectedIconPath": "/icon/office-supplies-fill.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

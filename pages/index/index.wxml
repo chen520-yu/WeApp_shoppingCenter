@@ -1,0 +1,42 @@
+<view class="swiper-container">
+    <swiper indicator-dots="{{indicatordots}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#000000" indicator-active-color="#ffffff" 	circular="true" previous-margin="80rpx"		next-margin="80rpx" easing-function="easeOutCubic">
+        <swiper-item class="display_col_center" wx:for="{{banners}}" wx:key="item">
+            <image src="{{item.image}}" mode="scaleToFill"></image>
+        </swiper-item>
+    </swiper>
+</view>
+
+<view class="theme">
+    <view class="theme-item" wx:for="{{icon_images}}" wx:key="item">
+        <image src="{{item.theme_icon}}"></image>
+        <text>{{item.theme_name}}</text>
+    </view>
+</view>
+
+
+<view class="menu">
+    <view class="menu-top">
+        <text>最新上线</text>
+    </view>
+
+    <view style="background-color: rgb(245, 244, 244);">
+        <view class="product" wx:for="{{newProduct}}" wx:key="item">
+            <navigator url="../detail/detail?id={{item._id}}" hover-class="none">
+                <view class="product-left">
+                    <image src="{{item.image}}"></image>
+                    <view class="product-left-text">
+                        <view class="product-left-text1">{{item.name}}</view>
+                        <view class="product-left-text2">市场价:￥{{item.marketPrice}}</view>
+                        <view class="product-left-text3">优惠价:<text style="color: red;font-size: 30rpx;"> ￥{{item.salePrice}}</text></view>
+                    </view>
+                </view>
+            </navigator>
+            <view class="product-right">
+                <van-button size="small" color="linear-gradient(to right, #ff6660, #FF6666)" data-item="{{item}}" bind:click="addCar">
+                    加入购物车
+                </van-button>
+            </view>
+
+        </view>
+    </view>
+</view>

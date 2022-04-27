@@ -1,0 +1,65 @@
+<view class="top display_row_center">
+    <view class="top_information display_col_center">
+        <view wx:if="{{!logged}}" class="display_col_center">
+            <image class="userIcon" src="{{userImg}}"></image>
+            <van-button style="margin-top: 20rpx;" round="true" size="small" color="linear-gradient(to right,#FF0033,#FF0022 )" bind:click="getuserinfo">
+                立即登录
+            </van-button>
+        </view>
+        <view class="display_col_center" wx:else="{{!logged}}">
+            <image class="userIcon" src="{{userImg}}"></image>
+            <text style="color: black;font-size: 33rpx;">{{name}}</text>
+        </view>
+    </view>
+</view>
+
+
+<view class="display_row_bet myOrder">
+    <text style="margin-left:40rpx;font-size: 34rpx;">我的订单</text>
+    <van-icon custom-style="margin-right:40rpx;" name="arrow" />
+</view>
+
+<view class="display_row_spa body">
+    <block wx:for="{{body_item}}" wx:key="item">
+        <view class="display_col_center body-item">
+            <image src="{{item.icon}}"></image>
+            <text>{{item.content}}</text>
+        </view>
+    </block>
+</view>
+
+
+<view class="display_col_str bottom">
+    <view class="display_row_spa">
+        <block wx:for="{{bottom}}" wx:key="item">
+            <view class="display_col_center body-item">
+                <image src="{{item.icon}}"></image>
+                <text>{{item.content}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="display_row_spa">
+        <block wx:for="{{bottom}}" wx:key="item">
+            <view class="display_col_center body-item">
+                <image src="{{item.icon}}"></image>
+                <text>{{item.content}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="display_row_spa">
+        <block wx:for="{{bottom}}" wx:key="item">
+            <view class="display_col_center body-item">
+                <image src="{{item.icon}}"></image>
+                <text>{{item.content}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="display_row_spa">
+        <block wx:for="{{bottom}}" wx:key="item">
+            <view class="display_col_center body-item">
+                <image src="{{item.icon}}"></image>
+                <text>{{item.content}}</text>
+            </view>
+        </block>
+    </view>
+</view>
