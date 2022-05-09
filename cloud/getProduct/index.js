@@ -15,5 +15,4 @@ exports.main = async (event, context) => {
     } catch (error) {
         console.log(error)
     }
-
 }

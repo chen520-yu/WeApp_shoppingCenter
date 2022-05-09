@@ -19,47 +19,7 @@
     <van-icon custom-style="margin-right:40rpx;" name="arrow" />
 </view>
 
-<view class="display_row_spa body">
-    <block wx:for="{{body_item}}" wx:key="item">
-        <view class="display_col_center body-item">
-            <image src="{{item.icon}}"></image>
-            <text>{{item.content}}</text>
-        </view>
-    </block>
-</view>
-
-
-<view class="display_col_str bottom">
-    <view class="display_row_spa">
-        <block wx:for="{{bottom}}" wx:key="item">
-            <view class="display_col_center body-item">
-                <image src="{{item.icon}}"></image>
-                <text>{{item.content}}</text>
-            </view>
-        </block>
-    </view>
-    <view class="display_row_spa">
-        <block wx:for="{{bottom}}" wx:key="item">
-            <view class="display_col_center body-item">
-                <image src="{{item.icon}}"></image>
-                <text>{{item.content}}</text>
-            </view>
-        </block>
-    </view>
-    <view class="display_row_spa">
-        <block wx:for="{{bottom}}" wx:key="item">
-            <view class="display_col_center body-item">
-                <image src="{{item.icon}}"></image>
-                <text>{{item.content}}</text>
-            </view>
-        </block>
-    </view>
-    <view class="display_row_spa">
-        <block wx:for="{{bottom}}" wx:key="item">
-            <view class="display_col_center body-item">
-                <image src="{{item.icon}}"></image>
-                <text>{{item.content}}</text>
-            </view>
-        </block>
-    </view>
-</view>
+<van-cell-group class="menu" inset>
+    <van-cell inset title="展示弹出层" is-link bind:click="showPopup" />
+    <van-cell inset title="展示弹出层" is-link bind:click="showPopup" />
+</van-cell-group>

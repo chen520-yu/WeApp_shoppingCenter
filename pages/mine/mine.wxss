@@ -14,7 +14,6 @@
     
 }
 
-
 .top_information text {
     margin-top: 25rpx;
     font-size: 35rpx;
@@ -66,5 +65,13 @@ page{
 
     
 }
+
+
+.menu{
+    margin-top: 200rpx;
+    background-color: antiquewhite;
+}
+
+
 
 
